@@ -1,5 +1,5 @@
-str1 = "acegikmoqsuwy"
-str2 = "bdfhjlnprtvxz"
+str1 = "32165465465"
+str2 = "24544613456"
 
 merged_Str = str1 + str2
 
