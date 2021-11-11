@@ -6,14 +6,14 @@ def guessing(numb):
         print("Guess a higher number please!")
         s_guess = int(input("Guess here again: "))
         while s_guess != answer:
-            print("Guess a higher number please!")
+            print("Try again with a different number please!")
             s_guess = int(input("Guess here again: "))
         print("You got it!")
     elif numb > answer:
         print("Guess a lower number please!")
         s_guess = int(input("Guess here again: "))
         while s_guess != answer:
-            print("Guess a lower number please!")
+            print("Try again with a different number please!")
             s_guess = int(input("Guess here again: "))
         print("You got it!")
     else:
