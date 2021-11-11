@@ -1,7 +1,7 @@
 answer = 5
 
 
-def guessingsys(numb):
+def guessing(numb):
     if numb < answer:
         print("Guess a higher number please!")
         s_guess = int(input("Guess here again: "))
@@ -21,9 +21,4 @@ def guessingsys(numb):
 
 
 guess = int(input("Guess a number between 1 -  10: "))
-guessingsys(guess)
-
-
-
-
-
+guessing(guess)
