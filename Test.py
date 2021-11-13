@@ -7,3 +7,6 @@ for i in range(1, 11):
 
 print("\n")
 print("Pi is {0:.50f}".format(22/7))
+
+centerString = "center"
+print((centerString.center(100)).count(" "))
