@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 initialSample = "This past summer, I had the privilege of participating in the University of Notre Dame's Research Experience for Undergraduates (REU) program ."
 strF = ""
-str = re.sub(r"[^a-zA-Z0-9]","",initialSample)
+str = re.sub(r"[^a-zA-Z0-9]", "", initialSample)
 
 for characters in str:
     strF = str + characters
@@ -20,8 +20,8 @@ height = str_Final[0:20]
 tick_label = ['E', 'R', 'I', 'T', 'A', 'S', 'P', 'N', 'U', 'H', 'O', 'G', 'D', 'M', 'F', 'C', 'V', 'L', 'Y', 'X']
 
 # plotting a bar chart
-plt.bar(left, height, tick_label = tick_label,
-        width = 0.8, color = ['red', 'green'])
+plt.bar(left, height, tick_label=tick_label,
+        width=0.8, color=['red', 'green'])
 
 # naming the x-axis
 plt.xlabel('Characters')
