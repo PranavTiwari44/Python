@@ -1,23 +1,20 @@
 import pandas
 import re
 import matplotlib.pyplot as plt
-
 initialSample = "This past summer, I had the privilege of participating in the University of Notre Dame's Research Experience for Undergraduates (REU) program ."
-strF = ""
-str = re.sub(r"[^a-zA-Z0-9]", "", initialSample)
 
-for characters in str:
-    strF = str + characters
+str = re.sub(r"[^a-zA-Z0-9 ]","",initialSample)
 
-str_Final = pandas.Series(list(strF.casefold())).value_counts()
+data = str.split()
+str_Final = pandas.Series(list(data)).value_counts()
 
-left = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+left = [1, 2, 3, 4]
 
 # heights of bars
-height = str_Final[0:20]
+height = str_Final[0:4]
 
 # labels for bars
-tick_label = ['E', 'R', 'I', 'T', 'A', 'S', 'P', 'N', 'U', 'H', 'O', 'G', 'D', 'M', 'F', 'C', 'V', 'L', 'Y', 'X']
+tick_label = ['the', 'of', 'this', 'notre']
 
 # plotting a bar chart
 plt.bar(left, height, tick_label=tick_label,
@@ -32,5 +29,3 @@ plt.title('Character cloud!')
 
 # function to show the plot
 plt.show()
-
-

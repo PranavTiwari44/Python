@@ -12,27 +12,40 @@
 #print((centerString.center(100)).count(" "))
 
 
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 # x-coordinates of left sides of bars
-left = [1, 2, 3, 4, 5]
+#left = [1, 2, 3, 4, 5]
 
 # heights of bars
-height = [10, 24, 36, 40, 5]
+#height = [10, 24, 36, 40, 5]
 
 # labels for bars
-tick_label = ['one', 'two', 'three', 'four', 'five']
+#tick_label = ['one', 'two', 'three', 'four', 'five']
 
 # plotting a bar chart
-plt.bar(left, height, tick_label = tick_label,
-        width = 0.8, color = ['red', 'green'])
+#plt.bar(left, height, tick_label = tick_label,
+#        width = 0.8, color = ['red', 'green'])
 
 # naming the x-axis
-plt.xlabel('x - axis')
+#plt.xlabel('x - axis')
 # naming the y-axis
-plt.ylabel('y - axis')
+#plt.ylabel('y - axis')
 # plot title
-plt.title('My bar chart!')
+#plt.title('My bar chart!')
 
 # function to show the plot
-plt.show()
+#plt.show()
+
+import pandas
+import re
+
+initialSample = "This past summer, I had the privilege of participating in the University of Notre Dame's Research Experience for Undergraduates (REU) program ."
+strF = ""
+str = re.sub(r"[^a-zA-Z0-9]","",initialSample)
+
+for characters in str:
+        strF = str + characters
+
+
+print(pandas.Series(list(strF.casefold())).get(0))
