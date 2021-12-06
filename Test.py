@@ -37,15 +37,22 @@
 # function to show the plot
 #plt.show()
 
-import pandas
-import re
+#import pandas
+#import re
 
+#initialSample = "This past summer, I had the privilege of participating in the University of Notre Dame's Research Experience for Undergraduates (REU) program ."
+#strF = ""
+#str = re.sub(r"[^a-zA-Z0-9]","",initialSample)
+
+#for characters in str:
+#        strF = str + characters
+
+
+#print(pandas.Series(list(strF.casefold())).get(0))
 initialSample = "This past summer, I had the privilege of participating in the University of Notre Dame's Research Experience for Undergraduates (REU) program ."
-strF = ""
-str = re.sub(r"[^a-zA-Z0-9]","",initialSample)
 
-for characters in str:
-        strF = str + characters
-
-
-print(pandas.Series(list(strF.casefold())).get(0))
+words = initialSample.split() #read the words into a list.
+uniqWords = set(words) #remove duplicate words and sort
+for word in uniqWords:
+        word.sort(key = lambda x: (words[x]["word"], words[x]["words.count(word)"]))
+        print(word)

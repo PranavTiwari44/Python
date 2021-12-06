@@ -21,11 +21,11 @@ plt.bar(left, height, tick_label=tick_label,
         width=0.8, color=['red', 'green', 'black', 'blue', 'purple'])
 
 # naming the x-axis
-plt.xlabel('Characters')
+plt.xlabel('Words')
 # naming the y-axis
-plt.ylabel('No. of character counts')
+plt.ylabel('No. of words counts')
 # plot title
-plt.title('Character cloud!')
+plt.title('Word cloud!')
 
 # function to show the plot
 plt.show()
