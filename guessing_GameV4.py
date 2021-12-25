@@ -15,5 +15,5 @@ def guessing(numb):
                 print("Guess Lower Please!")
     print("You got it!")
 
-guess = int(input("Guess a number between 1 -  {}: ".format(highest)))
+guess = int(input("Guess a number between 1 - {}: ".format(highest)))
 guessing(guess)
