@@ -49,10 +49,23 @@
 
 
 #print(pandas.Series(list(strF.casefold())).get(0))
-initialSample = "This past summer, I had the privilege of participating in the University of Notre Dame's Research Experience for Undergraduates (REU) program ."
+#initialSample = "This past summer, I had the privilege of participating in the University of Notre Dame's Research Experience for Undergraduates (REU) program ."
 
-words = initialSample.split() #read the words into a list.
-uniqWords = set(words) #remove duplicate words and sort
-for word in uniqWords:
-        word.sort(key = lambda x: (words[x]["word"], words[x]["words.count(word)"]))
-        print(word)
+#words = initialSample.split() #read the words into a list.
+#uniqWords = set(words) #remove duplicate words and sort
+#for word in uniqWords:
+#        word.sort(key = lambda x: (words[x]["word"], words[x]["words.count(word)"]))
+#       print(word)
+
+result = "test1"
+another_result = result
+
+print(id(result))
+print(id(another_result))
+
+result = ["test2"]
+print(id(result))
+
+result += [" with some more additions"]
+print(result)
+print(id(result))
