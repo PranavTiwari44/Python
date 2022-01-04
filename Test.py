@@ -49,10 +49,46 @@
 
 
 #print(pandas.Series(list(strF.casefold())).get(0))
-initialSample = "This past summer, I had the privilege of participating in the University of Notre Dame's Research Experience for Undergraduates (REU) program ."
+#initialSample = "This past summer, I had the privilege of participating in the University of Notre Dame's Research Experience for Undergraduates (REU) program ."
 
-words = initialSample.split() #read the words into a list.
-uniqWords = set(words) #remove duplicate words and sort
-for word in uniqWords:
-        word.sort(key = lambda x: (words[x]["word"], words[x]["words.count(word)"]))
-        print(word)
+#ords = initialSample.split() #read the words into a list.
+#uniqWords = set(words) #remove duplicate words and sort
+#for word in uniqWords:
+#       word.sort(key = lambda x: (words[x]["word"], words[x]["words.count(word)"]))
+#        print(word)
+data = [
+        "Andromeda - Shrub",
+        "Bellflower - Flower",
+        "China Pink - Flower",
+        "Daffodil - Flower",
+        "Evening Primrose - Flower",
+        "French Marigold - Flower",
+        "Hydrangea - Shrub",
+        "Iris - Flower",
+        "Japanese Camellia - Shrub",
+        "Lavender - Shrub",
+        "Lilac - Shrub",
+        "Magnolia - Shrub",
+        "Peony - Shrub",
+        "Queen Anne's Lace - Flower",
+        "Red Hot Poker - Flower",
+        "Snapdragon - Flower",
+        "Sunflower - Flower",
+        "Tiger Lily - Flower",
+        "Witch Hazel - Shrub",
+]
+
+flowers = []
+shrubs = []
+
+for dt in data[:]:
+        if "- Flower" in dt:
+                flowers.append(dt.replace("- Flower", ""))
+        else:
+                shrubs.append(dt.replace("- Shrub", ""))
+
+print(flowers)
+print(shrubs)
+
+flowers.extend(shrubs)
+print(flowers[11])
