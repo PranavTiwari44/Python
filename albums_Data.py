@@ -37,18 +37,5 @@ albums = [
      ]
      ),
 ]
-print("Music collection!")
-for name, artist, year, songs in albums:
-    print("Album: {}, Artist: {}, Year: {}, \nSongs: {}"
-          .format(name, artist, year, songs))
 
-print(albums[1][3][5][1])
-print(albums[2][2])
-print(albums[3][3][3][0])
-print(albums[2][3][1])
-
-a_Choice = int(input("Please enter album number: "))
-s_Choice = int(input("Please enter song number: "))
-
-print(albums[a_Choice-1][3][s_Choice-1][1])
 
