@@ -57,8 +57,12 @@
 #        word.sort(key = lambda x: (words[x]["word"], words[x]["words.count(word)"]))
 #        print(word)
 
-user_Input = input("Please enter three numbers: ")
-onechar = user_Input.split(",")
+#user_Input = input("Please enter three numbers: ")
+#onechar = user_Input.split(",")
 
-equation = int(onechar[0])+int(onechar[1])-int(onechar[2])
-print(equation)
+#equation = int(onechar[0])+int(onechar[1])-int(onechar[2])
+#print(equation)
+
+import re
+your_string = "hello  my !@#$%^&*()_+}{|:?>< pranav tiwarir ?"
+print(re.sub(r'\W+', '', your_string))
