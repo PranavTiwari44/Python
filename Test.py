@@ -66,30 +66,35 @@
 #import re
 #your_string = "hello  my !@#$%^&*()_+}{|:?>< pranav tiwarir ?"
 #print(re.sub(r'\W+', '', your_string))
-n=10
-t='e'
+
+#n=10
+#t='e'
 
 
-def sum_eo(n, t):
-    """
-    This function gives sum of odd or even number based on user's request
+#def sum_eo(n, t):
+#    """
+#    This function gives sum of odd or even number based on user's request
 
-    :param n: `int` > A number until where the user need the sum for.
-    :param t: `string` > A character based choice to find either even or odd
-    :return:  `int` > Total sum of either the even or odd numbers
-    """
-    if t == 'e':
-        total = 0
-        for sum_e in range(0, n, 2):
-            total = total+sum_e
-        return total
-    elif t == 'o':
-        total = 0
-        for sum_e in range(1, n, 2):
-            total = total+sum_e
-        return total
-    else:
-        return -1
+#    :param n: `int` > A number until where the user need the sum for.
+#    :param t: `string` > A character based choice to find either even or odd
+#   :return:  `int` > Total sum of either the even or odd numbers
+#    """
+#    if t == 'e':
+#       total = 0
+#        for sum_e in range(0, n, 2):
+#            total = total+sum_e
+#        return total
+#    elif t == 'o':
+#        total = 0
+#        for sum_e in range(1, n, 2):
+#            total = total+sum_e
+#        return total
+#    else:
+#        return -1
 
 
-print(sum_eo(n,t))
+#print(sum_eo(n,t))
+
+red = '\u001b[31m'
+
+print(red, "this will be in red")
