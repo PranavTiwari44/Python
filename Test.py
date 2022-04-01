@@ -95,6 +95,14 @@
 
 #print(sum_eo(n,t))
 
-red = '\u001b[31m'
+# red = '\u001b[31m'
+#
+# print(red, "this will be in red")
 
-print(red, "this will be in red")
+def star_args(args):
+    for x in args:
+        print(x)
+
+
+string = "hello", "hello1", "hello2", "hello3"
+star_args(string)
