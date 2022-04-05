@@ -99,10 +99,30 @@
 #
 # print(red, "this will be in red")
 
-def star_args(args):
-    for x in args:
-        print(x)
+# def star_args(args):
+#     for x in args:
+#         print(x)
+#
+#
+# string = "hello", "hello1", "hello2", "hello3"
+# star_args(string)
+
+# vehicles = {'jumper': 'ford mustang gt500'}
+#
+# my_car = vehicles['jumper']
+# print(my_car)
+vehicles = {
+    'dream': 'Honda 250T',
+    'roadster': 'BMW R1100',
+    'er5': 'Kawasaki ER5',
+    'can-am': 'Bombardier Can-Am 250',
+    'virago': 'Yamaha XV250',
+    'tenere': 'Yamaha XT650',
+    'jimny': 'Suzuki Jimny 1.5',
+    'fiesta': 'Ford Fiesta Ghia 1.4',
+}
 
 
-string = "hello", "hello1", "hello2", "hello3"
-star_args(string)
+vehicles['gordan'] = "G class"
+for key, value in vehicles.items():
+    print(key, value, sep=",")
