@@ -111,18 +111,35 @@
 #
 # my_car = vehicles['jumper']
 # print(my_car)
-vehicles = {
-    'dream': 'Honda 250T',
-    'roadster': 'BMW R1100',
-    'er5': 'Kawasaki ER5',
-    'can-am': 'Bombardier Can-Am 250',
-    'virago': 'Yamaha XV250',
-    'tenere': 'Yamaha XT650',
-    'jimny': 'Suzuki Jimny 1.5',
-    'fiesta': 'Ford Fiesta Ghia 1.4',
-}
+# vehicles = {
+#     'dream': 'Honda 250T',
+#     'roadster': 'BMW R1100',
+#     'er5': 'Kawasaki ER5',
+#     'can-am': 'Bombardier Can-Am 250',
+#     'virago': 'Yamaha XV250',
+#     'tenere': 'Yamaha XT650',
+#     'jimny': 'Suzuki Jimny 1.5',
+#     'fiesta': 'Ford Fiesta Ghia 1.4',
+# }
+#
+#
+# vehicles['gordan'] = "G class"
+# for key, value in vehicles.items():
+#     print(key, value, sep=",")
+
+# We need an empty dictionary, to store and display the letter frequencies.
+word_count = {}
+
+# Text string
+text = "Later in the course, you'll see how to use the collections Counter class."
+
+# Your code goes here ...
+for char in text.casefold():
+    if char.isalnum():
+        word_count[char] = word_count.setdefault(char, 0) + 1
 
 
-vehicles['gordan'] = "G class"
-for key, value in vehicles.items():
-    print(key, value, sep=",")
+# Printing the dictionary
+for letter, count in sorted(word_count.items()):
+    print(letter, count)
+

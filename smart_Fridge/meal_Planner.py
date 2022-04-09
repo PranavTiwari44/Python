@@ -8,10 +8,11 @@ shp_list = {}
 
 
 def shopping_list(data: dict, food: str, quantity: int) -> None:
-    if food in data:
-        data[food] += quantity
-    else:
-        data[food] = quantity
+    # if food in data:
+    #     data[food] += quantity
+    # else:
+    #     data[food] = quantity
+    data[food] = data.setdefault(food, 0) + quantity
 
 
 while True:
