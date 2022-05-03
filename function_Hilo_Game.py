@@ -1,4 +1,4 @@
-import time
+import timeCalc
 lowest = 1
 highest = 1000
 
