@@ -20,10 +20,10 @@ for x in pytz.all_timezones:
 
 while True:
     choice = input("Please write down a time zone to get info or press `0` to quit : ")
+    if choice == '0':
+        break
     tz_to_display = pytz.timezone(choice)
     world_time = datetime.datetime.now(tz=tz_to_display)
     print("The time in {} is {} {}".format(choice, world_time.strftime("%A %x %X %z"), world_time.tzname()))
     print("The localtime is {}".format(datetime.datetime.now().strftime("%A %x %X")))
     print("The utctime is {}".format(datetime.datetime.utcnow().strftime("%A %x %X")))
-    if choice == 0:
-        break
