@@ -16,7 +16,7 @@ canvas = tkinter.Canvas(leftFrame, relief='raised', borderwidth=1)
 canvas.pack(side='left', anchor='n')
 
 rightFrame = tkinter.Frame(mainWindow)
-rightFrame.pack(side='right', anchor='n', expand= True)
+rightFrame.pack(side='right', anchor='n', expand=True)
 
 button1 = tkinter.Button(rightFrame, text='Button 1')
 button2 = tkinter.Button(rightFrame, text='Button 2')
