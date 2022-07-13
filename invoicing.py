@@ -53,7 +53,7 @@ def record_invoice(invoice_file: TextIO,
     """Create a new invoice number, and write it to a file on disk.
 
     :param invoice_file: An open text file, opened using r+.
-    :param company: The name of the company being invoiced.
+    :param company: The _name of the company being invoiced.
     :param amount: The amount of the invoice.
     :param last_line_ptr: The position of the start of the last
         line in the file. This will be obtained by the previous

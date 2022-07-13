@@ -1,4 +1,4 @@
-name = input("Please type your name here: ")
+name = input("Please type your _name here: ")
 age = int(input("Please type your legal age "))
 
 if 18 <= age < 31:

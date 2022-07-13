@@ -23,7 +23,7 @@ with open(input_filename, encoding='utf-8', newline='') as country_file:
 print(countries['india'])
 
 while True:
-    chosen_country = input('Please enter the name of a country: ')
+    chosen_country = input('Please enter the _name of a country: ')
     country_key = chosen_country.casefold()
     if country_key in countries:
         country_data = countries[country_key]

@@ -9,7 +9,7 @@
 #
 # Display the dates and times in a format suitable for the
 # user of your program to understand, and include the
-# timezone name when displaying the chosen time.
+# timezone _name when displaying the chosen time.
 import time
 
 import pytz

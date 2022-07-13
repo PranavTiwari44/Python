@@ -9,7 +9,7 @@ with open(the_file) as country_file:
         country, capital, code, code3, dialing, timezone, currency = data
         # print(country, capital, code, code3, dialing, timezone, currency, sep='\n\t')
         country_dict = {
-            'name': country,
+            '_name': country,
             'capital': capital,
             'country_code': code,
             'cc3': code3,

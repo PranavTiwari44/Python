@@ -157,7 +157,7 @@ with open(filename, 'rb') as mp3_file:
 
                     # read 1 byte picture type
                     picture_type = int.from_bytes(mp3_file.read(1), 'big')
-                    # and get its human name
+                    # and get its human _name
                     apic_picture_name = apic_picture_types[picture_type]
                     print(f'Found {apic_picture_name} image')
 
@@ -173,7 +173,7 @@ with open(filename, 'rb') as mp3_file:
                         print(f'Image size = {image_size}')
                         image_data = mp3_file.read(image_size)
 
-                        # Create a file name from the picture name
+                        # Create a file _name from the picture _name
                         image_type = mime_type.split('/')[-1]
 
                         # get filename part only (without the path)

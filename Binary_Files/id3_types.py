@@ -93,7 +93,7 @@ frame_types = {
     b'TPUB': 'Publisher',
     b'TRCK': 'Track number/Position in set',
     b'TRDA': 'Recording dates',
-    b'TRSN': 'Internet radio station name',
+    b'TRSN': 'Internet radio station _name',
     b'TRSO': 'Internet radio station owner',
     b'TSIZ': 'Size',
     b'TSOA': 'Album sort order',
